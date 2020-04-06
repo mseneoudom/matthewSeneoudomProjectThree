@@ -1,0 +1,117 @@
+@media (max-width:1125px){
+    // fixing banner images 1
+    .itemDisplayFiftyH a {
+        height:30vh;
+
+        .imageContainer img{
+            object-position: 0 -200px;
+        }
+    }
+
+    // fixing banner images 2 (bottom 3)
+    .imageBanner .imageContainer img{
+        object-position: 0 -350px;
+    }
+}
+
+@media (max-width:1111px){
+    // header background centering
+    header{
+        background-position: center;
+    }
+
+    // mobile menu integration
+    // Hide old nav
+    .topNav .mainUL{
+        display:none;
+    }
+    //show hamburger 
+    label[for="navToggle"]{
+        display:initial;
+    }
+    
+    //item config - mobile responsive
+    .itemConfigSection .sectionContainer .itemGalary,
+    .itemConfigSection .sectionContainer .itemConfig{
+        width:100%;
+    }
+
+    .itemConfigSection .sectionContainer .itemConfig{
+        h3, h4, p{
+            padding-top:2%;
+        }
+    }
+    
+    .itemConfigSection .sectionContainer form{
+        p, select,input,button,option{
+            margin:1% 0;
+            padding:1% 0;
+        }
+    }
+}
+
+
+@media (max-width:857px){
+    //fixing banner images 1
+    .itemDisplayFiftyH a {
+        height:20vh;
+
+        .imageContainer img{
+            object-position: 0 -100px;
+        }
+    }
+    //fixing banner images 2 (bottom)
+    .imageBanner .imageContainer img{
+        object-position: 0 -250px;
+    }
+
+    //mobile nav width 100%
+    .mobileNav{
+        width:100%;
+    }
+
+    html{
+        font-size:55%;
+    }
+
+    .itemConfigSection{
+        padding:17% 0;
+    }
+}
+
+@media (max-width:700px){
+    // section container from row to column
+    .sectionContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sectionContainer .itemDisplayContainer,
+    .sectionContainer .itemDisplayVerticalBanner{
+        width:80%;
+        padding:2% 0;
+    }
+
+    //footer fix
+    .footerContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footerContainer .footerNav,
+    footer .footerContainer form{
+        width:100%;
+    }
+}
+
+
+@media (max-width:600px){
+    //fixing banner images 1
+    .itemDisplayFiftyH a .imageContainer img{
+        object-position: 0 -50px;
+    }
+
+    //fixing banner images 2
+    .imageBanner .imageContainer img{
+        object-position: 0 -100px;
+    }
+}

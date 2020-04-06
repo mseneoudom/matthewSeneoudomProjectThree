@@ -1,0 +1,56 @@
+footer{
+    background:rgb(22, 22, 22);
+    padding: 2% 0;
+    .footerContainer{
+        display:flex;
+        justify-content: space-between;
+        .footerNav{
+            display:flex;
+            flex-wrap:wrap;
+            width:50%; 
+            justify-content: space-between;
+
+            ul{
+                display:flex;
+                flex-direction: column;
+            }
+        }
+        form{
+            width:40%;
+
+            input[type="email"]{
+                padding:1%;
+                border:1px solid white;
+                margin-top:1%;
+                width:80%;
+                background:rgb(5, 5, 5);
+                &[placeholder]{
+                    color:white;
+                }
+            }
+            button{
+                background:none;
+                border:1px solid transparent;
+            }
+        }
+    }
+}
+
+footer a, .copyright p, button, legend, input[placeholder]{
+    color:white;
+    font-weight:300;
+    @include fontSize(12);
+}
+
+.copyright p{
+    text-align:center;
+    border-top:2px solid white;
+    padding-top:1%;
+    margin-top:1%;
+}
+
+.socialUL{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}

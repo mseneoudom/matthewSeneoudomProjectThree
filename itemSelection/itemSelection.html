@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awsome Link/Kit -->
+    <script src="https://kit.fontawesome.com/1a100a9ca4.js" crossorigin="anonymous"></script>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- mobile nav -->
+<input type="checkbox" name="navToggle" id="navToggle" class="visually-hidden">
+<label for="navToggle">
+    <i class="fas fa-bars"></i>
+</label>
+<nav class="mobileNav">
+    <ul class="mobileNavUL">
+        <li class="mobileSearchLI"> <!-- Search Function on Nav-->
+            <label for="mobileSearchLI" class="visually-hidden">Search</label>
+            <label for="openMobileSearchBox">
+                <i class="fas fa-search"></i>
+            </label>
+            <input type="checkbox" name="openMobileSearchBox" id="openMobileSearchBox">
+            <input type="text" name="mobileSearchLI" id="mobileSearchLI" placeholder="Search">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </li>
+        <li class="mobileNavLI"><a href="#">Home</a></li>
+        <li class="mobileNavLI"><a href="#">New Arrivals</a></li>
+        <li class="mobileNavLI"><a href="#">Clothing</a></li>
+        <li class="mobileNavLI"><a href="#">Collections</a></li>
+        <li class="mobileNavLI"><a href="#">Sale</a></li>
+        <li class="mobileNavLI"><a href="#">Login</a></li>
+        <li class="mobileNavLI"><a href="#">Sign Up</a></li>
+
+            <!--  -->
+        <li><!-- Shopping Cart on Nav-->
+            <a href="#"> 
+                <i class="fas fa-shopping-cart"></i>
+                <p class="totalItemQuantity"></p>
+            </a>
+        </li>
+        <!--  -->
+    </ul>
+</nav>
+<!--  -->
+
+
+<nav class="topNav">
+    <ul class="mainUL bleed">
+        <!--  -->
+        <li><a href="#" class="logoLI">Suspend</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New Arrivals</a>
+            <div class="subULContainer">
+                <ul class="subUL specialUL">
+                    <li><a href="#">View All Clothing</a></li>
+                    <li><a href="#">Shop Men</a></li>
+                    <li><a href="#">Shop Women</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Clothing</a>
+            <div class="subULContainer">
+                <ul class="subUL specialUL">
+                    <li><a href="#">View All Clothing</a></li>
+                    <li><a href="#">Shop Men</a></li>
+                    <li><a href="#">Shop Women</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#" class="saleLink">Sale</a></li>
+        <!--  -->
+        <li class="searchLI"> <!-- Search Function on Nav-->
+            <label for="searchLI" class="visually-hidden">Search</label>
+            <label for="openSearchBox">
+                <i class="fas fa-search"></i>
+            </label>
+            <input type="checkbox" name="openSearchBox" id="openSearchBox">
+            <input type="text" name="searchLI" id="searchLI" placeholder="Search">
+            <label for="searchButton"></label>
+        </li>
+            <!--  -->
+        <li class="navCheckOutLI"><!-- Shopping Cart on Nav-->
+            <a href="#"> 
+            <i class="fas fa-shopping-cart"></i>
+            <p class="totalItemQuantity"></p>
+            </a>
+            <div class="checkOutWindow">
+            </div>
+        </li>
+        <!--  -->
+        <li> <!-- User Login/ Sign Up Function on Nav-->
+            <a href="#"><i class="fas fa-user"></i></a>
+            <div class="subULContainer">
+                <ul class="subUL specialUL">
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<section class="itemConfigSection">
+    <div class="sectionContainer bleed">
+        <div class="itemGalary">
+        </div>
+        <div class="itemConfig">
+            <h3>Unisex Long Sleeve Shirts</h3>
+            <h4>Flight Over Fear</h4>
+            <a href="#">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                Read Reviews (24)
+            </a>
+            <p>Item Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptatum officia, asperiores ex quia iure!</p>
+            <form action="">
+                <select name="selectedItem" id="selectedItem">
+                    <option value="selectItem" selected disabled>Select a style</option>
+                    <option value="flightT" class="itemStyle">Flight Over Fear</option> 
+                    <option value="crimsonT" class="itemStyle">Crimson</option>
+                    <option value="alchemyT" class=" itemStyle">Alchemy</option>
+                </select>
+                <select name="itemColor" id="itemColor">
+                    <option value="defaultColor" selected disabled>Select a color</option>
+                </select>
+                <select name="itemSize" id="itemSize">
+                    <option value="defaultSize" selected disabled>Select a size</option>
+                </select>
+                <p class="itemPrice">Price: </p>
+                <div class="itemQuantityContainer">
+                <p for="itemQuantity">Quantity:</p>
+                <input type="number" name="itemQuantity" id="itemQuantity" value="0" min="0">
+                <div class="quantityButtonContainer">
+                    <button type="submit" class="quantityUp" ><i class="fas fa-sort-up"></i></button>
+                    <button type="submit" class="quantityDown"><i class="fas fa-sort-down"></i></button>
+                </div>
+                </div>
+
+                <button type="submit" id="addToCart">Add to cart</button>
+                <button type="submit" id="notifyMe"><i class="fas fa-envelope"></i>  Notify Me</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="footerContainer bleed">
+        <nav class="footerNav">
+            <ul>
+                <li><a href="#">Find a store</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Shipping and Delivery</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="socialUL">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+        <form action="emailRegister.php">
+            <fieldset>
+                <legend>Sign up for our newsletter</legend>
+                <label for="emailRegister" class="visually-hidden">Your Email</label>
+                <input type="email" name="emailRegister" id="emailRegister" placeholder="Your Email" for="emailRegister">
+                <button type="submit">
+                    <i class="far fa-paper-plane"></i>
+                </button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="copyright bleed">
+        <p>Copyright&copy;</p>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQUERY-->
+<script src="scriptItemOne.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+.topNav{
+    position: fixed;
+    background:white;
+    width:100%;
+    opacity: 80%;
+    z-index: 1;
+    border-top:1px solid black;
+    .mainUL{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position:relative;
+        li{
+            padding:2%;
+            &:hover>.subULContainer,
+            &:focus-within>.subULContainer
+            {
+                display:flex;
+                position:absolute;
+                top:100%;
+                left:0;
+            }
+            .subULContainer{
+                display:none;
+                background:rgb(240, 237, 237);
+                width:100%;
+                justify-content: space-evenly;
+
+                .subUL{
+                    display:flex;
+                    flex-direction: column;
+                    flex-wrap:wrap;
+                    justify-content: space-between;
+
+                    li{
+                        padding:10%;
+                        margin:5%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .navCheckOutLI{
+            position: relative;
+        }
+    }
+}
+
+// Search Checkbox LI Formatting
+.searchLI,
+.mobileSearchLI{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    input[id="searchLI"],
+    input[id="mobileSearchLI"]{
+        padding:1%;
+        height:0;
+        width:0;
+        border:1px solid transparent;
+        transition: 0.5s;
+        margin:0 8%;
+        color:black;
+    }
+    input[placeholder]{
+        padding:1%;
+    }
+    input[type="checkbox"]{
+        display:none;
+        &:checked~input[type="text"]{
+        height:100%;
+        width:100%;
+        border:1px solid rgb(192, 192, 192);
+        // position:relative;
+        }
+        &:checked~button[type="submit"]{
+            display:initial;
+        }
+    }
+}
+
+// submit search button
+nav button[type="submit"]{
+    display:none;
+    background:transparent;
+    color:black;
+    border:none;
+}
+
+.mainUL a, .mainUL i{
+    text-transform: uppercase;
+}
+
+.subUL:first-child{
+    font-weight:500;
+}
+
+.mainUL .saleLink{
+    color:rgb(143, 18, 43);
+    font-weight:500;
+}
+
+.totalItemQuantity{
+    position:absolute;
+    background:white;
+    top:40%;
+    right:0%;
+    @include fontSize(12);
+}
+
+// mobile nav
+label[for="navToggle"]{
+    display:none;
+    position:absolute;
+    left:8%;
+    top:25px;
+    border:1px solid white;
+    border-radius: 8px;
+    padding:5px;
+    z-index: 2;
+
+    i{
+        @include fontSize(36);
+        color:white;
+    }
+}
+
+.mobileNav{
+    // display:none;
+    background:white;
+    opacity: 80%;
+    position:absolute;
+    z-index:1;
+    width:30%;
+    left:-100%;
+    transition: 500ms;
+}
+
+input[name="navToggle"]:checked ~ .mobileNav{
+    left:0;
+}
+
+.mobileNav{
+    .mobileNavUL{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        height:100vh;
+        align-items: center;
+        li{
+            padding:2%;
+            a{
+                color:black;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.sectionContainer{
+    display:flex;
+    border:1px solid red;
+}
+
+.imageDisplayContainer{
+    display:flex;
+    flex-wrap:wrap;
+    border:1px solid blue;
+
+    :first-child{
+        flex:1 0 100%;
+    }
+}
+
+
+.red{
+    background:red;
+}
+.blue{
+    background:blue;
+    
+}
+.green{
+    background:green;
+}
+.yellow{
+    background:yellow;
+}
+
+.imagePlaceHolder{
+    height:100px;
+    width:100px;
+    border:1px solid black;
+    flex:1 0 33%; 
+}
+
+select, button, input{
+    height:50px;
+    width:100px;
+}
+
+.item{
+    width:100px;
+    height:100px;
+    background:salmon;
+    border:1px solid black;
+}
+
+.checkOutContainer{
+    width:100%;
+    border: 1px solid red;
+}
+
+.checkOutContainer{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.checkOutValueContainer{
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+// .checkOutItem{
+//     height:125px;
+//     width:125px; 
+//     background:crimson;
+// }

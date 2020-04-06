@@ -1,0 +1,64 @@
+.itemDisplayContainer,
+.headerText, 
+.itemDisplayText,
+.itemDisplayFiftyH a,
+.itemDisplayFiftyW a,
+.imageBanner a{
+    &:hover{
+        opacity:70%;
+    }
+    &:focus-within{
+        opacity:70%;
+    }
+}
+
+.itemDisplayText{
+    &:hover + .imageContainer,
+    &:focus-within + .imageContainer{
+        display:none;
+    }
+}
+
+.itemDisplayText:hover,
+.mainUL a, 
+.mainUL i,
+footer nav a,
+footer button{
+    &:hover{
+    color:rgb(94, 94, 94);
+    }
+    &:focus-within{
+        color:rgb(94, 94, 94);
+        }
+}
+
+.itemConfigSection{
+    button[type="submit"]:hover,
+    button[type="submit"]:focus-within{
+        background:white;
+        color:black;
+        border:1px solid black;
+    }
+}
+
+.mainUL li{
+    border:2px solid transparent;
+        &:hover,
+        &:focus-within{
+        border-bottom:2px solid rgb(100, 98, 98);
+        border-top:2px solid rgb(100, 98, 98);
+    }
+        &:hover,
+        &:focus-within > a{
+        color:rgb(100, 98, 98);
+    }
+}
+
+// scrolling animation on banner 
+.imageBanner .imageContainer img{
+    &:hover,
+    &:focus-within{
+        transition: 4s linear; //Did this on purpose so it resets the 'animation'
+    object-position:0 -800px;
+    }
+}

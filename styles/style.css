@@ -1,0 +1,1186 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bleed {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan';
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.shopNow {
+  color: black;
+  border: 1px solid transparent;
+  padding: 2%;
+  background: white;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+  margin: 0;
+}
+
+.topNav {
+  position: fixed;
+  background: white;
+  width: 100%;
+  opacity: 80%;
+  z-index: 1;
+  border-top: 1px solid black;
+}
+
+.topNav .mainUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.topNav .mainUL li {
+  padding: 2%;
+}
+
+.topNav .mainUL li:hover > .subULContainer,
+.topNav .mainUL li:focus-within > .subULContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.topNav .mainUL li .subULContainer {
+  display: none;
+  background: #f0eded;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.topNav .mainUL li .subULContainer .subUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topNav .mainUL li .subULContainer .subUL li {
+  padding: 10%;
+  margin: 5%;
+  text-align: center;
+}
+
+.topNav .mainUL .navCheckOutLI {
+  position: relative;
+}
+
+.searchLI,
+.mobileSearchLI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.searchLI input[id="searchLI"],
+.searchLI input[id="mobileSearchLI"],
+.mobileSearchLI input[id="searchLI"],
+.mobileSearchLI input[id="mobileSearchLI"] {
+  padding: 1%;
+  height: 0;
+  width: 0;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 8%;
+  color: black;
+}
+
+.searchLI input[placeholder],
+.mobileSearchLI input[placeholder] {
+  padding: 1%;
+}
+
+.searchLI input[type="checkbox"],
+.mobileSearchLI input[type="checkbox"] {
+  display: none;
+}
+
+.searchLI input[type="checkbox"]:checked ~ input[type="text"],
+.mobileSearchLI input[type="checkbox"]:checked ~ input[type="text"] {
+  height: 100%;
+  width: 100%;
+  border: 1px solid silver;
+}
+
+.searchLI input[type="checkbox"]:checked ~ button[type="submit"],
+.mobileSearchLI input[type="checkbox"]:checked ~ button[type="submit"] {
+  display: initial;
+}
+
+nav button[type="submit"] {
+  display: none;
+  background: transparent;
+  color: black;
+  border: none;
+}
+
+.mainUL a, .mainUL i {
+  text-transform: uppercase;
+}
+
+.subUL:first-child {
+  font-weight: 500;
+}
+
+.mainUL .saleLink {
+  color: #8f122b;
+  font-weight: 500;
+}
+
+.totalItemQuantity {
+  position: absolute;
+  background: white;
+  top: 40%;
+  right: 0%;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+label[for="navToggle"] {
+  display: none;
+  position: absolute;
+  left: 8%;
+  top: 25px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+  z-index: 2;
+}
+
+label[for="navToggle"] i {
+  font-size: 36px;
+  font-size: 3.6rem;
+  color: white;
+}
+
+.mobileNav {
+  background: white;
+  opacity: 80%;
+  position: absolute;
+  z-index: 1;
+  width: 30%;
+  left: -100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+input[name="navToggle"]:checked ~ .mobileNav {
+  left: 0;
+}
+
+.mobileNav .mobileNavUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobileNav .mobileNavUL li {
+  padding: 2%;
+}
+
+.mobileNav .mobileNavUL li a {
+  color: black;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../suspendClothingPhotos/shootTwo/TIG_6790.jpg);
+  background-position: 20% 40%;
+  background-size: cover;
+}
+
+header .headerText {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .headerText p {
+  text-transform: uppercase;
+}
+
+header .headerText h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 60px;
+  font-size: 6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+header .headerText .shopNow {
+  color: black;
+}
+
+.sectionContainer {
+  padding: 3% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionContainer h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  text-align: center;
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 2% 0;
+}
+
+.sectionContainer .itemDisplayContainer {
+  width: 30%;
+  position: relative;
+}
+
+.sectionContainer .itemDisplayContainer .imageContainer {
+  max-height: 620px;
+  overflow: hidden;
+}
+
+.itemDisplayFiftyH a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 40vh;
+}
+
+.itemDisplayFiftyH a .imageContainer {
+  overflow: hidden;
+  margin: 1% 0;
+}
+
+.itemDisplayFiftyH a .imageContainer img {
+  -o-object-position: 0 -250px;
+     object-position: 0 -250px;
+}
+
+.itemDisplayFiftyH a .itemDisplayText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+
+.itemDisplayFiftyH a .itemDisplayText h3 {
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.itemDisplayFiftyH:nth-of-type(2) .itemDisplayText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  left: initial;
+}
+
+.itemDisplayVerticalBanner {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.itemDisplayVerticalBanner .itemDisplayText {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.itemDisplayVerticalBanner .itemDisplayText h3 {
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.imageBanner {
+  overflow: hidden;
+  position: relative;
+}
+
+.imageBanner .imageContainer {
+  height: 25vh;
+  margin: 1% 0;
+}
+
+.imageBanner .imageContainer img {
+  -o-object-position: 0 -400px;
+     object-position: 0 -400px;
+}
+
+.imageBanner .itemDisplayText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 70%;
+}
+
+.imageBanner .itemDisplayText a {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.headerText p, h1, h3 {
+  color: white;
+}
+
+.itemDisplayText, .mainUL a, .mainUL i {
+  color: black;
+}
+
+footer {
+  background: #161616;
+  padding: 2% 0;
+}
+
+footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footerContainer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footerContainer .footerNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footerContainer form {
+  width: 40%;
+}
+
+footer .footerContainer form input[type="email"] {
+  padding: 1%;
+  border: 1px solid white;
+  margin-top: 1%;
+  width: 80%;
+  background: #050505;
+}
+
+footer .footerContainer form input[type="email"][placeholder] {
+  color: white;
+}
+
+footer .footerContainer form button {
+  background: none;
+  border: 1px solid transparent;
+}
+
+footer a, .copyright p, button, legend, input[placeholder] {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.copyright p {
+  text-align: center;
+  border-top: 2px solid white;
+  padding-top: 1%;
+  margin-top: 1%;
+}
+
+.socialUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.itemDisplayContainer:hover,
+.headerText:hover,
+.itemDisplayText:hover,
+.itemDisplayFiftyH a:hover,
+.itemDisplayFiftyW a:hover,
+.imageBanner a:hover {
+  opacity: 70%;
+}
+
+.itemDisplayContainer:focus-within,
+.headerText:focus-within,
+.itemDisplayText:focus-within,
+.itemDisplayFiftyH a:focus-within,
+.itemDisplayFiftyW a:focus-within,
+.imageBanner a:focus-within {
+  opacity: 70%;
+}
+
+.itemDisplayText:hover + .imageContainer,
+.itemDisplayText:focus-within + .imageContainer {
+  display: none;
+}
+
+.itemDisplayText:hover:hover,
+.mainUL a:hover,
+.mainUL i:hover,
+footer nav a:hover,
+footer button:hover {
+  color: #5e5e5e;
+}
+
+.itemDisplayText:hover:focus-within,
+.mainUL a:focus-within,
+.mainUL i:focus-within,
+footer nav a:focus-within,
+footer button:focus-within {
+  color: #5e5e5e;
+}
+
+.itemConfigSection button[type="submit"]:hover,
+.itemConfigSection button[type="submit"]:focus-within {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.mainUL li {
+  border: 2px solid transparent;
+}
+
+.mainUL li:hover, .mainUL li:focus-within {
+  border-bottom: 2px solid #646262;
+  border-top: 2px solid #646262;
+}
+
+.mainUL li:hover,
+.mainUL li:focus-within > a {
+  color: #646262;
+}
+
+.imageBanner .imageContainer img:hover, .imageBanner .imageContainer img:focus-within {
+  -webkit-transition: 4s linear;
+  transition: 4s linear;
+  -o-object-position: 0 -800px;
+     object-position: 0 -800px;
+}
+
+.itemConfigSection {
+  padding: 10% 0;
+  background-image: url(./../suspendClothingPhotos/shootOne/TIG_4244.jpg);
+  background-size: cover;
+  background-position: 20% 50%;
+}
+
+.itemConfigSection .sectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(255, 251, 251, 0.85);
+  padding: 2% 2%;
+}
+
+.itemConfigSection .sectionContainer .itemGalary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.itemConfigSection .sectionContainer .itemGalary .imageContainer {
+  width: 33%;
+  -o-object-fit: none;
+     object-fit: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  padding: 2% 0;
+  margin-bottom: 1%;
+  max-height: 200px;
+}
+
+.itemConfigSection .sectionContainer .itemGalary .imageContainer:nth-of-type(1) {
+  width: 100%;
+  border: 1px solid transparent;
+  max-height: 700px;
+  min-height: 650px;
+}
+
+.itemConfigSection .sectionContainer .itemConfig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding: 5% 5%;
+}
+
+.itemConfigSection .sectionContainer .itemConfig h3, .itemConfigSection .sectionContainer .itemConfig h4, .itemConfigSection .sectionContainer .itemConfig a {
+  color: black;
+  margin: 0;
+  max-height: 10%;
+  text-align: left;
+  font-weight: 300;
+}
+
+.itemConfigSection .sectionContainer .itemConfig h3, .itemConfigSection .sectionContainer .itemConfig h4, .itemConfigSection .sectionContainer .itemConfig p {
+  padding-top: 6%;
+}
+
+.itemConfigSection .sectionContainer .itemConfig h4 {
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+
+.itemConfigSection .sectionContainer .itemConfig a i, .itemConfigSection .sectionContainer .itemConfig a {
+  color: black;
+}
+
+.itemConfigSection .sectionContainer form {
+  padding: 5% 0;
+}
+
+.itemConfigSection .sectionContainer form p {
+  text-align: left;
+  margin: 5% 0;
+  padding: 2% 0;
+}
+
+.itemConfigSection .sectionContainer form select, .itemConfigSection .sectionContainer form input, .itemConfigSection .sectionContainer form button, .itemConfigSection .sectionContainer form option {
+  width: 100%;
+  margin: 2% 0;
+  padding: 1% 0;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Spartan';
+}
+
+.itemConfigSection .sectionContainer form button {
+  color: white;
+  background: black;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.itemConfigSection .sectionContainer form .itemQuantityContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.itemConfigSection .sectionContainer form .itemQuantityContainer p {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.itemConfigSection .sectionContainer form .itemQuantityContainer input {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 70%;
+          flex: 1 0 70%;
+}
+
+.itemConfigSection .sectionContainer form .itemQuantityContainer .quantityButtonContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+}
+
+.itemConfigSection .sectionContainer form .itemQuantityContainer .quantityButtonContainer button {
+  float: right;
+  width: 70%;
+}
+
+.checkOutWindow {
+  position: absolute;
+  border: 1px solid black;
+  width: 400px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+}
+
+.checkOutWindow .checkOutItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1%;
+}
+
+.checkOutWindow .checkOutItem .checkOutItemDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkOutWindow .checkOutItem .checkOutItemIcon {
+  width: 35%;
+}
+
+.checkOutWindow .checkOutItem .checkOutItemDescription {
+  width: 65%;
+  padding: 2%;
+}
+
+.checkOutWindow .checkOutItem p {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.checkOutWindow button {
+  color: white;
+  background: black;
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 1%;
+  text-transform: uppercase;
+}
+
+.checkOutWindow:before {
+  content: '';
+  width: 10%;
+  height: 10%;
+  border-top: 5px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid black;
+  position: absolute;
+  top: -10%;
+  left: 5%;
+}
+
+@media (max-width: 1125px) {
+  .itemDisplayFiftyH a {
+    height: 30vh;
+  }
+  .itemDisplayFiftyH a .imageContainer img {
+    -o-object-position: 0 -200px;
+       object-position: 0 -200px;
+  }
+  .imageBanner .imageContainer img {
+    -o-object-position: 0 -350px;
+       object-position: 0 -350px;
+  }
+}
+
+@media (max-width: 1111px) {
+  header {
+    background-position: center;
+  }
+  .topNav .mainUL {
+    display: none;
+  }
+  label[for="navToggle"] {
+    display: initial;
+  }
+  .itemConfigSection .sectionContainer .itemGalary,
+  .itemConfigSection .sectionContainer .itemConfig {
+    width: 100%;
+  }
+  .itemConfigSection .sectionContainer .itemConfig h3, .itemConfigSection .sectionContainer .itemConfig h4, .itemConfigSection .sectionContainer .itemConfig p {
+    padding-top: 2%;
+  }
+  .itemConfigSection .sectionContainer form p, .itemConfigSection .sectionContainer form select, .itemConfigSection .sectionContainer form input, .itemConfigSection .sectionContainer form button, .itemConfigSection .sectionContainer form option {
+    margin: 1% 0;
+    padding: 1% 0;
+  }
+}
+
+@media (max-width: 857px) {
+  .itemDisplayFiftyH a {
+    height: 20vh;
+  }
+  .itemDisplayFiftyH a .imageContainer img {
+    -o-object-position: 0 -100px;
+       object-position: 0 -100px;
+  }
+  .imageBanner .imageContainer img {
+    -o-object-position: 0 -250px;
+       object-position: 0 -250px;
+  }
+  .mobileNav {
+    width: 100%;
+  }
+  html {
+    font-size: 55%;
+  }
+  .itemConfigSection {
+    padding: 17% 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .sectionContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectionContainer .itemDisplayContainer,
+  .sectionContainer .itemDisplayVerticalBanner {
+    width: 80%;
+    padding: 2% 0;
+  }
+  .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footerContainer .footerNav,
+  footer .footerContainer form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .itemDisplayFiftyH a .imageContainer img {
+    -o-object-position: 0 -50px;
+       object-position: 0 -50px;
+  }
+  .imageBanner .imageContainer img {
+    -o-object-position: 0 -100px;
+       object-position: 0 -100px;
+  }
+}

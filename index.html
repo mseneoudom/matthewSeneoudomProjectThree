@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awsome Link/Kit -->
+    <script src="https://kit.fontawesome.com/1a100a9ca4.js" crossorigin="anonymous"></script>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<input type="checkbox" name="navToggle" id="navToggle" class="visually-hidden">
+<label for="navToggle">
+    <i class="fas fa-bars"></i>
+</label>
+<nav class="mobileNav">
+    <ul class="mobileNavUL">
+        <li class="mobileSearchLI"> <!-- Search Function on Nav-->
+            <label for="mobileSearchLI" class="visually-hidden">Search</label>
+            <label for="openMobileSearchBox">
+                <i class="fas fa-search"></i>
+            </label>
+            <input type="checkbox" name="openMobileSearchBox" id="openMobileSearchBox">
+            <input type="text" name="mobileSearchLI" id="mobileSearchLI" placeholder="Search">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </li>
+        <li class="mobileNavLI"><a href="#">Home</a></li>
+        <li class="mobileNavLI"><a href="#">New Arrivals</a></li>
+        <li class="mobileNavLI"><a href="#">Clothing</a></li>
+        <li class="mobileNavLI"><a href="#">Collections</a></li>
+        <li class="mobileNavLI"><a href="#">Sale</a></li>
+        <li class="mobileNavLI"><a href="#">Login</a></li>
+        <li class="mobileNavLI"><a href="#">Sign Up</a></li>
+
+            <!--  -->
+        <li><!-- Shopping Cart on Nav-->
+            <a href="#"> 
+                <i class="fas fa-shopping-cart"></i>
+                <p class="totalItemQuantity"></p>
+            </a>
+        </li>
+        <!--  -->
+    </ul>
+</nav>
+
+<nav class="topNav">
+
+    <ul class="mainUL bleed">
+        <!--  -->
+        <li><a href="#" class="logoLI">Suspend</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New Arrivals</a>
+            <div class="subULContainer">
+                <ul class="subUL specialUL">
+                    <li><a href="#">View All Clothing</a></li>
+                    <li><a href="#">Shop Men</a></li>
+                    <li><a href="#">Shop Women</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Clothing</a>
+            <div class="subULContainer">
+                <ul class="subUL specialUL">
+                    <li><a href="#">View All Clothing</a></li>
+                    <li><a href="#">Shop Men</a></li>
+                    <li><a href="#">Shop Women</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+                <ul class="subUL">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#" class="saleLink">Sale</a></li>
+        <!--  -->
+        <li class="searchLI"> <!-- Search Function on Nav-->
+            <label for="searchLI" class="visually-hidden">Search</label>
+            <label for="openSearchBox">
+                <i class="fas fa-search"></i>
+            </label>
+            <input type="checkbox" name="openSearchBox" id="openSearchBox">
+            <input type="text" name="searchLI" id="searchLI" placeholder="Search">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </li>
+            <!--  -->
+        <li><!-- Shopping Cart on Nav-->
+            <a href="#"> 
+            <i class="fas fa-shopping-cart"></i>
+            <p class="totalItemQuantity"></p>
+            </a>
+        </li>
+        <!--  -->
+        <li> <!-- User Login/ Sign Up Function on Nav-->
+            <a href="#"><i class="fas fa-user"></i></a>
+            <div class="subULContainer">
+                <ul class="subUL specialUL">
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <div class="headerText">
+    <a href="#">
+        <p>enter</p>
+        <h1>Suspend</h1>
+        <p class="shopNow">Shop Now</p>
+    </a>
+    </div>
+</header>
+
+<section>
+    <div class="sectionContainer bleed">
+        <h2>Newest Arrivals</h2>
+        <a class="itemDisplayContainer" href="itemOne.html">
+            <div class="imageContainer">
+                <img src="./suspendClothingPhotos/shootOne/TIG_4223.jpg" alt="flight over fear longsleeve t model shoot 1 - white text black shirt">
+            </div>
+            <div class="itemDisplayText">
+                <p class="itemDisplayTitle">Flight Over Fear</p>
+                <p class="itemDisplayCategory">Unisex Long Sleeve T-Shirt</p>
+                <p class="itemDisplayPrice">$25</p>
+            </div>
+        </a>
+        <a class="itemDisplayContainer" href="#">
+            <div class="imageContainer">
+                <img src="./suspendClothingPhotos/shootTwo/TIG_6775.jpg" alt="suspend red longsleeve t model shoot 1">
+            </div>
+            <div class="itemDisplayText">
+                <p class="itemDisplayTitle">Suspend Red</p>
+                <p class="itemDisplayCategory">Unisex Long Sleeve T-Shirt</p>
+                <p class="itemDisplayPrice">$45</p>
+            </div>
+        </a>
+        <a class="itemDisplayContainer" href="#">
+            <div class="imageContainer">
+                <img src="./suspendClothingPhotos/shootThree/liftstylePhoto/TIG_6509.jpg" alt="crimson line longsleeve t model shoot 1">
+            </div>
+            <div class="itemDisplayText">
+                <p class="itemDisplayTitle">Suspend Crimson</p>
+                <p class="itemDisplayCategory">Unisex Long Sleeve T-Shirt</p>
+                <p class="itemDisplayPrice">$60</p>
+            </div>
+        </a>
+    </a>
+</section>
+
+<section>
+    <div class="sectionContainer bleed">
+        <h2>Featured</h2>
+        <div class="itemDisplayFiftyH">
+            <a href="#">
+                <div class="imageContainer">
+                    <img src="./suspendClothingPhotos/shootOne/TIG_4237.jpg"  alt="suspend 2018 banner photo">
+                </div>
+                <div class="itemDisplayText">
+                    <h3>S/S 2018</h3>
+                    <p class="shopNow">Shop Now</p>
+                </div>
+            </a>
+        </div>
+        <div class="itemDisplayFiftyH">
+            <a href="#">
+                <div class="imageContainer">
+                    <img src="./suspendClothingPhotos/shootOne/TIG_4311.jpg" alt="flight over fear banner photo">
+                </div>
+                <div class="itemDisplayText">
+                    <h3>Flight over fear</h3>
+                    <p class="shopNow">Shop Now</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="sectionContainer bleed">
+        <h2>Collections</h2>
+        <div class="itemDisplayVerticalBanner">
+            <a href="#">
+                <div class="imageContainer">
+                    <img src="./suspendClothingPhotos/shootThree/liftstylePhoto/TIG_6676.jpg" alt="crimson longsleeve t model shoot 2">
+                </div>
+                <div class="itemDisplayText">
+                    <h3>Crimson</h3>
+                    <p class="shopNow">Shop Now</p>
+                </div>
+            </a>
+        </div>
+        <div class="itemDisplayVerticalBanner">
+            <a href="#">
+                <div class="imageContainer">
+                    <img src="./suspendClothingPhotos/shootFour/lifestylePhoto/TIG_7388.jpg" alt="fight or flight longsleeve t model shoot 2">
+                </div>
+                <div class="itemDisplayText">
+                    <h3>Alchemy</h3>
+                    <p class="shopNow">Shop Now</p>
+                </div>
+            </a>
+        </div>
+        <div class="itemDisplayVerticalBanner">
+            <a href="#">
+                <div class="imageContainer">
+                    <img src="./suspendClothingPhotos/shootTwo/TIG_6792.jpg" alt="apocalypse longsleeve t model shoot 1">
+                </div>
+                <div class="itemDisplayText">
+                    <h3>Apocalypse</h3>
+                    <p class="shopNow">Shop Now</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="sectionContainer bleed">
+        <h2>More Styles</h2>
+        <div class="imageBanner">
+            <a href="#">
+                <p href="#">
+                    <div class="imageContainer">
+                        <img src="./suspendClothingPhotos/shootTwo/TIG_6792.jpg" alt="">
+                    </div>
+                    <div class="itemDisplayText">
+                        <p class="shopNow">More Styles</p>
+                    </div>
+            </a>
+        </div>
+        <div class="imageBanner">
+            <a href="#">
+                <div class="imageContainer">
+                    <img src="./suspendClothingPhotos/shootThreE/liftstylePhoto/TIG_6680.jpg" alt="crimson-line long-tee banner photo - red text, black shirt">
+                </div>
+                <div class="itemDisplayText">
+                    <p class="shopNow">More Styles</p>
+                </div>
+            </a>
+        </div>
+        <div class="imageBanner">
+            <a href="#">
+                <div class="imageContainer">
+                    <img src="./suspendClothingPhotos/shootFour/lifestylePhoto/TIG_7176.jpg" alt="flight over fear long-tee banner photo">
+                </div>
+                <div class="itemDisplayText">
+                    <p class="shopNow">More Styles</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footerContainer bleed">
+        <nav class="footerNav">
+            <ul>
+                <li><a href="#">Find a store</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Shipping and Delivery</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="socialUL">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+        <form action="emailRegister.php">
+            <fieldset>
+                <legend>Sign up for our newsletter</legend>
+                <label for="emailRegister" class="visually-hidden">Your Email</label>
+                <input type="email" name="emailRegister" id="emailRegister" placeholder="Your Email" for="emailRegister">
+                <button type="submit">
+                    <i class="far fa-paper-plane"></i>
+                </button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="copyright bleed">
+        <p>Copyright&copy;</p>
+    </div>
+</footer>
+
+</body>
+</html>

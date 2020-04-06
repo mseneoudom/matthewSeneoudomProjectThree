@@ -1,0 +1,27 @@
+header{
+    height:100vh;
+    background-image:url(../suspendClothingPhotos/shootTwo/TIG_6790.jpg);
+    background-position: 20% 40%;
+    background-size:cover;
+
+    .headerText{
+        position: absolute;
+        bottom:10%;
+        left:10%;
+        display:flex;
+        flex-direction: column;
+        p{
+            text-transform: uppercase;
+        }
+        h1{
+        margin:0;
+        display:inline-block;
+        @include fontSize(60);
+        font-weight:300;
+        text-transform: uppercase;
+        }
+        .shopNow{
+            color:black;
+        }
+    }
+}
