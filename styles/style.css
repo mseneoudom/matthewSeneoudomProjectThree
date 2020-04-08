@@ -523,7 +523,7 @@ header {
 header .headerText {
   position: absolute;
   bottom: 10%;
-  left: 10%;
+  left: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,6 +531,12 @@ header .headerText {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+header .headerText button {
+  background: none;
+  border: 1px solid transparent;
+  text-align: left;
 }
 
 header .headerText p {
@@ -797,7 +803,7 @@ footer a, .copyright p, button, legend, input[placeholder] {
 .headerText:hover,
 .itemDisplayText:hover,
 .itemDisplayFiftyH a:hover,
-.itemDisplayFiftyW a:hover,
+.itemDisplayVerticalBanner a:hover,
 .imageBanner a:hover {
   opacity: 70%;
 }
@@ -806,7 +812,7 @@ footer a, .copyright p, button, legend, input[placeholder] {
 .headerText:focus-within,
 .itemDisplayText:focus-within,
 .itemDisplayFiftyH a:focus-within,
-.itemDisplayFiftyW a:focus-within,
+.itemDisplayVerticalBanner a:focus-within,
 .imageBanner a:focus-within {
   opacity: 70%;
 }
@@ -816,7 +822,7 @@ footer a, .copyright p, button, legend, input[placeholder] {
   display: none;
 }
 
-.itemDisplayText:hover:hover,
+.itemDisplayText:hover,
 .mainUL a:hover,
 .mainUL i:hover,
 footer nav a:hover,
@@ -824,7 +830,7 @@ footer button:hover {
   color: #5e5e5e;
 }
 
-.itemDisplayText:hover:focus-within,
+.itemDisplayText:focus-within,
 .mainUL a:focus-within,
 .mainUL i:focus-within,
 footer nav a:focus-within,
@@ -861,7 +867,7 @@ footer button:focus-within {
 }
 
 .itemConfigSection {
-  padding: 10% 0;
+  padding: 8% 0;
   background-image: url(./../suspendClothingPhotos/shootOne/TIG_4244.jpg);
   background-size: cover;
   background-position: 20% 50%;
@@ -923,7 +929,7 @@ footer button:focus-within {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  padding: 5% 5%;
+  padding: 3% 5%;
 }
 
 .itemConfigSection .sectionContainer .itemConfig h3, .itemConfigSection .sectionContainer .itemConfig h4, .itemConfigSection .sectionContainer .itemConfig a {

@@ -2,7 +2,7 @@
 .headerText, 
 .itemDisplayText,
 .itemDisplayFiftyH a,
-.itemDisplayFiftyW a,
+.itemDisplayVerticalBanner a,
 .imageBanner a{
     &:hover{
         opacity:70%;
@@ -19,7 +19,7 @@
     }
 }
 
-.itemDisplayText:hover,
+.itemDisplayText,
 .mainUL a, 
 .mainUL i,
 footer nav a,
