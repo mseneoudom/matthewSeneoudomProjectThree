@@ -1,12 +1,13 @@
 /* JS Objectives
+    1. Wait for user to select one of the following styles from the list
 
-    1. Get item color value by getting the user to select an option in the drop down menu which allows them to pick a color. With JS, we have assigned each selecion with a value which will then be stored in itemColor variable.
+    2. Get item color value by getting the user to select an option in the drop down menu which allows them to pick a color. With JS, we have assigned each selecion with a value which will then be stored in itemColor variable. Item color and size is pulled from our object 'inventory' and will be created for selection on the html
 
-    2. Get item size. Same as above.
+    3. Get item size. Same as above.
 
-    3. Quantity * Price. Price is predefined per webpage. We will have a quantity section that defaults to 0, and will allow the user to increment the value up by 1 with no max, and decrement the value to a minimum of 0. The price will then update by mutliplying the price * quantity.
+    4. Quantity * Price. Price is predefined per webpage. We will have a quantity section that defaults to 0, and will allow the user to increment the value up by 1 with no max, and decrement the value to a minimum of 0. The price will then update by mutliplying the price * quantity.
 
-    4. Add to cart - All the values will generate a shopping cart list on the bottom of the page(position fixed maybe).
+    5. Add to cart - on click of add to cart, the item will create an array with the users saved item. All the values will generate a shopping cart list on the top right (under the cart icon) of the page. This will display a notification of item details and will have a button for remove item as well. Remove item will deduct the total from the cart and create a seperate array to store items to be removed from your main array.
 */
 let itemQuantity = 0;
 let itemSize;
@@ -16,11 +17,14 @@ let updatedPrice;
 let checkOutList =[];
 let removedCheckOutItem =[];
 let totalItemQuantity = 0;
+let itemRating = `<i class="fas fa-star"></i>`
 const inventory = {
     men :{
         shirts:{
             flightT:{
                 name: 'Flight Over Fear',
+                description:'Eu aeque antiopam nec, nominavi qualisque vel an, ne essent mandamus usu. Usu diam omnesque ei, dicit lobortis no quo.',
+                ratingAvg: 4,
                 color: ['Red','Blue','Black','White','Grey'],
                 size: ['Xtra Small', 'Small', 'Medium', 'Large', 'Xtra Large'],
                 price: 25,
@@ -35,6 +39,8 @@ const inventory = {
             },
             crimsonT:{
                 name: 'Crimson',
+                description:'Lorem ipsum dolor sit amet, ne scaevola mediocritatem vim. Et per dolorum inimicus. Et denique verterem eos. Vix meliore ceteros.',
+                ratingAvg: 5,
                 color: ['Red','Black','White','Navy'],
                 size: ['Xtra Small', 'Small', 'Medium', 'Large', 'Xtra Large'],
                 price: 40,
@@ -49,6 +55,8 @@ const inventory = {
             },
             alchemyT:{
                 name: 'Alchemy',
+                description:'Duo posse epicurei eu. Cum ei eripuit aliquam deseruisse. Magna percipitur eu sed. Persius detracto complectitur eos ex, lucilius scriptorem.',
+                ratingAvg: 4,
                 color: ['Purple','Black','White','Grey'],
                 size: ['Xtra Small', 'Small', 'Medium', 'Large', 'Xtra Large'],
                 price: 60,
@@ -64,9 +72,9 @@ const inventory = {
         }
     }
 }
-
+$(function(){
 // Select your item to sync options
-$('#selectedItem').on('click', $('option.itemStyle'), function(e){
+$('#selectedItem').on('change', $('option.itemStyle'), function(e){
     // Get Item from Object
     selectedItem = $(this).val();
     
@@ -75,10 +83,14 @@ $('#selectedItem').on('click', $('option.itemStyle'), function(e){
     $('#itemColor').empty();
     $('#itemSize').empty();
 
+    // load the item title, description, catagory, review
+    $('.itemTitle').html(inventory['men']['shirts'][selectedItem]['name']);
+    $('.itemDescription').html(inventory['men']['shirts'][selectedItem]['description']);
+    $('.itemRating').html(`${itemRating.repeat(inventory['men']['shirts'][selectedItem]['ratingAvg'])} Read Reviews ( ${Math.floor(Math.random() * 28) + 18} )`);
 
 
     // get Object background image
-    $('.itemConfigSection').css({'background-image':'url('+(inventory['men']['shirts'][selectedItem]['background'])+')','background-repeat':'repeat','background-position':'20% 50%'});
+    $('.itemConfigSection').css({'background-image':'url('+(inventory['men']['shirts'][selectedItem]['background'])+')','background-repeat':'repeat',});
     
     // get itemGalary images from Object
     for (let i=0; i<inventory['men']['shirts'][selectedItem]['galary'].length; i++){
@@ -235,4 +247,6 @@ $('.checkOutWindow').on('click', 'button.removeItem', function(){
 
 
     $(this).parent().parent().parent().remove();
+})
+
 })

@@ -928,7 +928,7 @@ footer button:focus-within {
 
 .itemConfigSection .sectionContainer .itemConfig h3, .itemConfigSection .sectionContainer .itemConfig h4, .itemConfigSection .sectionContainer .itemConfig a {
   color: black;
-  margin: 0;
+  margin: 2% 0;
   max-height: 10%;
   text-align: left;
   font-weight: 300;
