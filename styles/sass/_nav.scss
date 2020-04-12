@@ -112,7 +112,7 @@ nav button[type="submit"]{
 // mobile nav
 label[for="navToggle"]{
     display:none;
-    position:absolute;
+    position:fixed;
     left:8%;
     top:25px;
     border:1px solid white;

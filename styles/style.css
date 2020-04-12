@@ -458,7 +458,7 @@ nav button[type="submit"] {
 
 label[for="navToggle"] {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 8%;
   top: 25px;
   border: 1px solid white;
@@ -1124,6 +1124,11 @@ footer button:focus-within {
   .itemConfigSection .sectionContainer form p, .itemConfigSection .sectionContainer form select, .itemConfigSection .sectionContainer form input, .itemConfigSection .sectionContainer form button, .itemConfigSection .sectionContainer form option {
     margin: 1% 0;
     padding: 1% 0;
+  }
+  .totalItemQuantity {
+    position: relative;
+    top: -17px;
+    left: 20px;
   }
 }
 
