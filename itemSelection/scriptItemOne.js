@@ -168,7 +168,7 @@ $('#addToCart').on('click', function(e){
     $('.checkOutWindow').append(`<div class="checkOutItem">
     <div class="checkOutItemIcon">
         <div class="imageContainer">
-            <img src="${inventory['men']['shirts'][selectedItem]['image']}" alt="">
+            <img src="${inventory['men']['shirts'][selectedItem]['image']}" alt="added cart item">
         </div>
     </div>
     <div class="checkOutItemDescription">

@@ -140,6 +140,13 @@ label[for="navToggle"]{
 input[name="navToggle"]:checked ~ .mobileNav{
     left:0;
 }
+input[name="navToggle"]:checked + label[for="navToggle"]
+{
+    border:1px solid black;
+    i{
+        color:black;
+    }
+}
 
 .mobileNav{
     .mobileNavUL{
