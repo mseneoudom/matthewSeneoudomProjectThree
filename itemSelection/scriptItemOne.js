@@ -98,9 +98,9 @@ $('#selectedItem').on('change', $('option.itemStyle'), function(e){
     }
     
     // get colors available
-    $('#itemColor').append(`<option value="defaultColor" selected disabled>Select a color</option>`);
+    $('#itemColor').append(`<option value="defaultColor" disabled>Select a color</option>`);
     for (let i=0; i<inventory['men']['shirts'][selectedItem]['color'].length; i++){
-        $('#itemColor').append(`<option value="color${inventory['men']['shirts'][selectedItem]['color'][i]}" class="itemColor itemColozr${inventory['men']['shirts'][selectedItem]['color'][i]}">${inventory['men']['shirts'][selectedItem]['color'][i]}</option>`)
+        $('#itemColor').append(`<option value="${inventory['men']['shirts'][selectedItem]['color'][i]}" class="itemColor itemColor${inventory['men']['shirts'][selectedItem]['color'][i]}">${inventory['men']['shirts'][selectedItem]['color'][i]}</option>`)
     }
 
     // get size available
@@ -123,19 +123,13 @@ $('.itemGalary').on('click','.previewImage', function(){
     $(this).prependTo('.itemGalary');
 })
 
-
-// Get itemColor value on click
-$('#itemColor').on('click','option.itemColor', function(e){
-    e.preventDefault();
-
-    itemColor = $(this).html();
+$('#itemColor').on('change', function(){
+    itemColor= $(this).children(":selected").val()
 })
 
 // Get itemSize value on click
-$('#itemSize').on('click','option.itemSize', function(e){
-    e.preventDefault();
-
-    itemSize = $(this).html();
+$('#itemSize').on('change', function(){
+    itemSize = $(this).children(":selected").val();
 })
 
 // Quantity Buttons + Changing the price by Quantity
@@ -165,44 +159,39 @@ $('#addToCart').on('click', function(e){
     e.preventDefault();
     
     if(itemQuantity>0 && itemColor !== undefined && itemSize !== undefined ){
-    $('.checkOutWindow').append(`<div class="checkOutItem">
-    <div class="checkOutItemIcon">
-        <div class="imageContainer">
-            <img src="${inventory['men']['shirts'][selectedItem]['image']}" alt="added cart item">
+    $('.addedToCart').append(`
+    <div class="checkOutItem">
+        <div class="checkOutItemIcon">
+            <div class="imageContainer">
+                <img src="${inventory['men']['shirts'][selectedItem]['image']}" alt="added cart item">
+            </div>
         </div>
-    </div>
-    <div class="checkOutItemDescription">
-        <div class="checkOutItemLI checkOutItemName">
-            <p>${inventory['men']['shirts'][selectedItem]['name']}</p>
+        <div class="checkOutItemDescription">
+            <div class="checkOutItemLI checkOutItemName">
+                <p>${inventory['men']['shirts'][selectedItem]['name']}</p>
+            </div>
+            <div class="checkOutItemLI checkOutItemColor">
+                <p>${itemColor}</p>
+            </div>
+            <div class="checkOutItemLI checkOutItemSize">
+                <p>${itemSize}</p>
+            </div>
+            <div class="checkOutItemLI checkOutItemQuantity">
+                <p>${itemQuantity}</p>
+            </div>
+            <div class="checkOutItemLI checkOutItemPrice">
+                <p>Price/Unit: $${inventory['men']['shirts'][selectedItem]['price']}</p>
+            </div>
+            <div class="checkOutItemLI checkOutItemTotal">
+                <p>Total Price: $${inventory['men']['shirts'][selectedItem]['price'] * itemQuantity}</p>
+            </div>
+            <div class="checkOutItemLI checkOutButtons">
+                <button>Edit</button>
+                <button class="removeItem">Remove Item</button>
+            </div>
         </div>
-        <div class="checkOutItemLI checkOutItemColor">
-            <p>${itemColor}</p>
-        </div>
-        <div class="checkOutItemLI checkOutItemSize">
-            <p>${itemSize}</p>
-        </div>
-        <div class="checkOutItemLI checkOutItemQuantity">
-            <p>${itemQuantity}</p>
-        </div>
-        <div class="checkOutItemLI checkOutItemPrice">
-            <p>Price/Unit: $${inventory['men']['shirts'][selectedItem]['price']}</p>
-        </div>
-        <div class="checkOutItemLI checkOutItemTotal">
-            <p>Total Price: $${inventory['men']['shirts'][selectedItem]['price'] * itemQuantity}</p>
-        </div>
-        <div class="checkOutItemLI checkOutButtons">
-            <button>Edit</button>
-            <button class="removeItem">Remove Item</button>
-        </div>
-    </div>
-</div>`
+    </div>`
     );
-
-    // Make the checkout window disapear after 7000 ms
-    $('.checkOutWindow').animate({opacity:1.0},500);
-    $('.checkOutWindow').delay().fadeIn();
-    $('.checkOutWindow').delay(5000).fadeOut();
-    }
 
     // Creart Array of newOrder
     let newOrder = [
@@ -213,7 +202,7 @@ $('#addToCart').on('click', function(e){
         `${inventory['men']['shirts'][selectedItem]['price']}`,
         `${inventory['men']['shirts'][selectedItem]['price'] * itemQuantity}`
     ];
-
+    
     checkOutList.push(newOrder);
     // shopping cart number update
     for (let i=0; i<checkOutList.length; i++){
@@ -225,11 +214,12 @@ $('#addToCart').on('click', function(e){
     $('.totalItemQuantity').html(`( ${totalItemQuantity} )`);
     
     totalItemQuantity = 0;
+    }
 })
 
 
 // when remove button is clicked, create add the item to a new array, deduct the total from the cart, remove the item added window
-$('.checkOutWindow').on('click', 'button.removeItem', function(){
+$('.addedToCart').on('click', 'button.removeItem', function(){
     let removedItemsArray=[$(this).parent().siblings(".checkOutItemName").children('p').html(),
     $(this).parent().siblings(".checkOutItemColor").children('p').html(),
     $(this).parent().siblings(".checkOutItemSize").children('p').html(),

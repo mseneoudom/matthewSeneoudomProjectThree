@@ -1,51 +1,57 @@
 .topNav{
-    position: fixed;
-    background:white;
+    position:absolute;
+    top:0;
     width:100%;
-    opacity: 80%;
-    z-index: 1;
-    border-top:1px solid black;
-    .mainUL{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.mainUL{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+
+    li{
         position:relative;
-        li{
-            padding:2%;
-            &:hover>.subULContainer,
-            &:focus-within>.subULContainer
-            {
-                display:flex;
-                position:absolute;
-                top:100%;
-                left:0;
-            }
-            .subULContainer{
-                display:none;
-                background:rgb(240, 237, 237);
-                width:100%;
-                justify-content: space-evenly;
-
-                .subUL{
-                    display:flex;
-                    flex-direction: column;
-                    flex-wrap:wrap;
-                    justify-content: space-between;
-
-                    li{
-                        padding:10%;
-                        margin:5%;
-                        text-align: center;
-                    }
-                }
-            }
+        a{
+            color:white;
+            @include fontSize(20);
         }
-        .navCheckOutLI{
-            position: relative;
+    }
+    li:hover >.subUL{
+        display:flex;
+        flex-direction:column;
+    }
+
+}
+
+.subUL{
+    position:absolute;
+    background:rgba(93, 93, 93, 0.664);
+    li{
+        a{
+            padding:10%;
+            display:block;
+            color:white;
         }
     }
 }
 
+.subUL{
+    display:none;
+}
+
+.logo{
+    width:100%;
+    padding:20px 0;
+    p{
+        text-align: center;
+        @include fontSize(50);
+        text-transform:uppercase;
+        color:rgb(219, 218, 218);
+        letter-spacing: -8px;
+    }
+}
 // Search Checkbox LI Formatting
 .searchLI,
 .mobileSearchLI{
@@ -55,7 +61,7 @@
     position:relative;
     input[id="searchLI"],
     input[id="mobileSearchLI"]{
-        padding:1%;
+        padding:2%;
         height:0;
         width:0;
         border:1px solid transparent;
@@ -101,13 +107,6 @@ nav button[type="submit"]{
     font-weight:500;
 }
 
-.totalItemQuantity{
-    position:absolute;
-    background:white;
-    top:40%;
-    right:0%;
-    @include fontSize(12);
-}
 
 // mobile nav
 label[for="navToggle"]{
@@ -161,5 +160,39 @@ input[name="navToggle"]:checked + label[for="navToggle"]
                 color:black;
             }
         }
+    }
+}
+
+
+.shoppingCart{
+    position:fixed;
+    bottom:0;
+    right:20px;
+    background:white;
+    padding:10px 15px;
+    border-radius:2px;
+    z-index:2;
+
+    a{
+        display:flex;
+    }
+
+    i{
+        color:black;
+    }
+
+    .addedToCart{
+        height:0;
+        max-width:300px;
+    }
+    
+    &:hover>.addedToCart,
+    &:hover>.addedToCart .checkOutItem,{
+        height:100%;
+        display:flex;
+    }
+
+    p{
+        color:black;
     }
 }
